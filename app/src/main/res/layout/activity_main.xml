@@ -59,6 +59,14 @@
         android:maxLines="1"
         app:zp_is_arrow_visible="true"
         app:zp_type="pan" />
+    <com.zarinpal.libs.views.ZarinEditText
+        android:id="@+id/edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        app:zp_leftFirstIcon="@drawable/ic_launcher_background"
+        />
+
 
     <com.zarinpal.libs.views.ZarinItemView
         android:id="@+id/item"
