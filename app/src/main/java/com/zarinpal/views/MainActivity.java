@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ZarinTimer timer = findViewById(R.id.timer);
-        
+
         timer.startTimer(new ZarinTimer.OnTimerListener() {
             @Override
             public void onTime(String time) {
@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, "onTimeComplete: ");
             }
         });
-        
-        
+
+
     }
 
 }

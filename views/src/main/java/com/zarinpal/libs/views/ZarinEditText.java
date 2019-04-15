@@ -346,7 +346,8 @@ public class ZarinEditText extends RelativeLayout implements TextWatcher {
     }
 
     public boolean isValidPhoneNumber() {
-        return this.getText().matches("^(09{1})+([1-3]{1})+(\\d{8})$");
+        String phoneNumber = this.getText();
+        return !phoneNumber.isEmpty() && phoneNumber.length() == 11 && phoneNumber.startsWith("09");
     }
 
     /**
