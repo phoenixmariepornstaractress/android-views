@@ -4,7 +4,7 @@
 - Add library gradle : 
 
 ```Gradle
-    compile 'com.zarinpal:views:0.4.4'
+    compile 'com.zarinpal:views:0.4.5'
 ```
 
 ###### sample : 
