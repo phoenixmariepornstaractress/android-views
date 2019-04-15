@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.jfrog.bintray'
 apply plugin: 'com.github.dcendents.android-maven'
 
-def versionLib = '0.4.4'
+def versionLib = '0.4.5'
 def googleLibVersion = "27.1.1"
 group = 'com.zarinpal'
 version = versionLib
@@ -54,8 +54,8 @@ artifacts {
 }
 
 bintray {
-    user = 'XXXX'
-    key = 'XXXX'
+    user = 'hosseinamiinii'
+    key = '9375f6367a55aeafdc33559f3443fcbbf08e24d6'
     pkg {
 
         repo = 'lib'
