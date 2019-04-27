@@ -47,7 +47,7 @@ public class ZarinButton extends android.support.v7.widget.AppCompatButton {
 
         try {
             this.padding = array.getDimensionPixelSize(R.styleable.ZarinButton_android_padding,
-                    20);
+                    2);
             this.fontFace = array.getInt(R.styleable.ZarinButton_zp_fontFace,
                     FontUtility.INDEX_IRANSANS_LIGHT);
             this.rippleColor = array.getColor(R.styleable.ZarinButton_zp_rippleColor,
