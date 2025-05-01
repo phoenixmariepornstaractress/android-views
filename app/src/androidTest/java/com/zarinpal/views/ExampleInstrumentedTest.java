@@ -7,20 +7,23 @@ import android.support.test.runner.AndroidJUnit4;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
- * Instrumented test, which will execute on an Android device.
+ * Instrumented test executed on an Android device to validate application context.
  *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
 @RunWith(AndroidJUnit4.class)
 public class ExampleInstrumentedTest {
-    @Test
-    public void useAppContext() throws Exception {
-        // Context of the app under test.
-        Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.zarinpal.views", appContext.getPackageName());
+    @Test
+    public void testAppContext() throws Exception {
+        Context context = InstrumentationRegistry.getTargetContext();
+        String expectedPackageName = "com.zarinpal.views";
+        String actualPackageName = context.getPackageName();
+
+        assertEquals("Package name should match", expectedPackageName, actualPackageName);
     }
 }
+ 
