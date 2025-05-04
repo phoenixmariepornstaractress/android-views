@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
     android:orientation="vertical"
     android:padding="20dp"
+    android:gravity="center_horizontal"
     tools:context="com.zarinpal.views.MainActivity">
 
+    <!-- Profile Image -->
     <com.zarinpal.libs.views.ZarinCircularImageView
         android:id="@+id/img_dialog"
         android:layout_width="60dp"
@@ -21,6 +22,7 @@
         app:civ_shadow_color="#484848"
         app:civ_shadow_radius="3" />
 
+    <!-- Amount Display -->
     <com.zarinpal.libs.views.ZarinTextView
         android:id="@+id/txt_test"
         android:layout_width="wrap_content"
@@ -30,6 +32,7 @@
         app:zp_fontFace="iran_sans_light"
         app:zp_textFormat="currency" />
 
+    <!-- Timer Progress -->
     <com.zarinpal.libs.views.ZarinTimer
         android:id="@+id/zarin_progress"
         android:layout_width="match_parent"
@@ -37,6 +40,7 @@
         android:layout_marginBottom="10dp"
         app:zp_time="20" />
 
+    <!-- Action Button -->
     <com.zarinpal.libs.views.ZarinButton
         android:id="@+id/btn"
         android:layout_width="wrap_content"
@@ -51,6 +55,7 @@
         app:zp_pressColor="#1abc9c"
         app:zp_rippleColor="#3498db" />
 
+    <!-- Zarin Edit Texts -->
     <com.zarinpal.libs.views.ZarinEditText
         android:id="@+id/edt_zarin"
         android:layout_width="match_parent"
@@ -59,15 +64,15 @@
         android:maxLines="1"
         app:zp_is_arrow_visible="true"
         app:zp_type="pan" />
+
     <com.zarinpal.libs.views.ZarinEditText
         android:id="@+id/edt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="right"
-        app:zp_leftFirstIcon="@drawable/ic_launcher_background"
-        />
+        app:zp_leftFirstIcon="@drawable/ic_launcher_background" />
 
-
+    <!-- Item View -->
     <com.zarinpal.libs.views.ZarinItemView
         android:id="@+id/item"
         android:layout_width="match_parent"
@@ -81,7 +86,7 @@
         app:zp_setTitle="عنوان تستی"
         app:zp_tintLeftColor="#707070" />
 
-
+    <!-- PIN Input -->
     <com.zarinpal.libs.views.ZarinPinView
         android:id="@+id/zarin_pin"
         android:layout_width="250dp"
@@ -95,10 +100,9 @@
         android:textSize="16sp"
         app:zp_activeColor="@color/normal"
         app:zp_pinBackgroundIsSquare="true"
-        app:zp_pinLineStroke="2dp">
+        app:zp_pinLineStroke="2dp" />
 
-    </com.zarinpal.libs.views.ZarinPinView>
-
+    <!-- Card Info Display -->
     <com.zarinpal.libs.views.ZarinPanTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -110,11 +114,12 @@
         app:zp_setCardNumber="639607******2706"
         app:zp_textSize="13sp" />
 
+    <!-- Countdown Timer -->
     <com.zarinpal.libs.views.ZarinTimer
         android:id="@+id/timer"
         android:layout_width="match_parent"
         android:layout_height="5dp"
         app:zp_time="30" />
 
-
 </LinearLayout>
+ 
