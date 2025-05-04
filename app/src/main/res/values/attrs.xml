@@ -1,4 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- Colors -->
+    <color name="primary">#26A69A</color>
+    <color name="primary_dark">#00796B</color>
+    <color name="accent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#707070</color>
+    <color name="dark_gray">#484848</color>
+
+    <!-- Strings -->
+    <string name="app_name">ZarinpalApp</string>
+    <string name="btn_click">Click button</string>
+    <string name="test_title">عنوان تستی</string>
+
+    <!-- Dimensions -->
+    <dimen name="padding_standard">16dp</dimen>
+    <dimen name="margin_standard">16dp</dimen>
+    <dimen name="image_size">60dp</dimen>
+    <dimen name="button_padding">10dp</dimen>
+
+    <!-- Styles -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
 </resources>
